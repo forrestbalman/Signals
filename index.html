@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Signals</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div id="top-row" class="row text-light text-center mt-4">
+			<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
+				Learn more
+			</button>
+			<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+				  	<div class="modal-content">
+						<div class="modal-header">
+					  		<h5 class="modal-title text-dark text-center" id="exampleModalCenterTitle">Performace notes</h5>
+					  		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+					  		</button>
+						</div>
+						<div class="modal-body">
+							<p class="text-dark text-justify">
+								<em class="lead">Signals</em> invites any number of participants to perform a uniquely generated piece of music. Begin by assigning each member of the ensemble a number between 1 and the size of the ensemble. In the event that the ensemble is greater than 16 participants, numbers can be shared. Input the size of the ensemble and the number of performers in the text fields. The ensemble should be prepared to perform prior to the submit button being pressed.<br><br>
+								After pressing the submit button, the screen will populate with a number of boxes equal to the number of participants. Each box should contain a number corresponding to the numbers assigned to the ensemble. Shortly after the boxes appear, a word, alongside the assigned number, will occupy the center of the box. These words are intended to guide the participants in their facilitation of musical ideas. All adjectives are meant to be interpreted. A list of all of the possible words will be below these instructions.<br><br>
+								There are two words in the list that are non-adjectives, <em>Mimic</em>, and <em>Compliment</em>:<br>
+								The <em>Mimic</em> instruction implies that the performer listen and attempt to copy something audible. The performer who receives the instruction can change what they choose to copy, however the entity that is being copied should be singular. The <em>Compliment</em> instruction is intended to be a counterpart to the <em>Mimic</em> instruction. The rules are the same, but rather than copy the source material, the performer should join their reference in a duet.
+								A list of all words used: Loud, Soft, Fast, Slow, Grow, Shrink, Long, Short, Sing, Speak, Sour, Sweet, Even, Off, Mimic, and Compliment
+							</p>
+						</div>
+						<div class="modal-footer">
+					  		<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+						</div>
+				  	</div>
+				</div>
+			</div>
+			<h1 class="display-4">Signals</h1>
+			<p class="lead">for any number of players</p>
+		</div>
+		<div id="middle-row" class="row">
+			<div id="form" class="col">
+				<form id="user-input">
+					<div class="form-group row">
+						<label for="players" class="col col-form-label text-light text-center"># of players</label>
+						<input type="number" class="form-control mx-4" id="players" placeholder="# of players">
+					</div>
+					<div class="form-group row">
+						<label for="length" class="col col-form-label text-light text-center">Length</label>
+						<input type="number" class="form-control mx-4" id="length" placeholder='in minutes'>
+					</div>
+					<div class="form-group row">
+						<button class="btn btn-block btn-primary mx-4" id="submit" type="button">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="bottom-row" class="row">
+			<div class="col">
+				<p id="timer" class="h3 text-light text-monospace text-left"></p>
+			</div>
+		</div>
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="script.js"></script>
+</body>
+</html>
